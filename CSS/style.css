@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'PDAfont';
+    src: url('../fonts/PDAfont.ttf');
+}
+
+@font-face {
+    font-family: 'Titlefont';
+    src: url('../fonts/titlefontss14.ttf');
+}
+
+h1,
+h2 {
+    font-family: "Titlefont";
+}
+
+mark {
+    color: red;
+    background: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+#NT-NON-APPROVED-MATERIAL strong {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: repeating-linear-gradient(45deg,
+            #c7cdd2 0,
+            #c7cdd2 5px,
+            #092337 5px,
+            #092337 10px);
+    padding: 0.2em;
+    text-decoration: line-through;
+}
+
+#NT-NON-APPROVED-MATERIAL ins {
+    font-weight: 700;
+    font-size: 1em;
+    font-family: "Titlefont";
+    color: #153d5b;
+}
+
+.line {
+    color: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PDAfont";
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+a {
+    color: #80cbc4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 2em;
+}
+
+ul {
+    list-style: square inside;
+    margin: 1em 0;
+}
+
+ul strong {
+    font-family: "Titlefont";
+}
+
+.line,
+.highlight {
+    font-family: "PDAfont";
+    color: #666;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #888;
+}
+
+.chem-header {
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1f1f1f;
+    font-size: 1.1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.chem-dexplus {
+    color: #4da0bd;
+    border-left: 4px solid #4da0bd;
+}
+
+.chem-dylo {
+    color: #3a1d8a;
+    border-left: 4px solid #3a1d8a;
+}
+
+.chem-bicar {
+    color: #ffaa00;
+    border-left: 4px solid #ffaa00;
+}
+
+.chem-dex {
+    color: #0041a8;
+    border-left: 4px solid #0041a8;
+}
+
+.chem-derma {
+    color: #215263;
+    border-left: 4px solid #215263;
+}
+
+.chem-inaprov {
+    color: #731024;
+    border-left: 4px solid #731024;
+}
+
+.chem-tranex {
+    color: #ba7d7d;
+    border-left: 4px solid #ba7d7d;
+}
+
+.chem-tricor {
+    color: #00e5ff;
+    border-left: 4px solid #00e5ff;
+}
+
+.chem-arith {
+    color: #bd5902;
+    border-left: 4px solid #bd5902;
+}
+
+.chem-siderlac {
+    color: #f4dab8;
+    border-left: 4px solid #f4dab8;
+}
+
+.chem-saline {
+    color: #0064C8;
+    border-left: 4px solid #0064C8;
+}
+
+.chem-bruiz {
+    color: #ff3636;
+    border-left: 4px solid #ff3636;
+}
+
+.chem-lacer {
+    color: #283332;
+    border-left: 4px solid #283332;
+}
+
+.chem-punct {
+    color: #b9bf93;
+    border-left: 4px solid #b9bf93;
+}
+
+.chem-lepo {
+    color: #ff7db5;
+    border-left: 4px solid #ff7db5;
+}
+
+.chem-pyra {
+    color: #aa4308;
+    border-left: 4px solid #aa4308;
+}
+
+.chem-insuzine {
+    color: #8147ff;
+    border-left: 4px solid #8147ff;
+}
+
+.chem-ethyl {
+    color: #2d5708;
+    border-left: 4px solid #2d5708;
+}
+
+.chem-ambuzol {
+    color: #86caf7;
+    border-left: 4px solid #86caf7;
+}
+
+.chem-ambuzolPlus {
+    color: #1274b5;
+    border-left: 4px solid #1274b5;
+}
+
+.chem-phalanx {
+    color: #c8ff75;
+    border-left: 4px solid #c8ff75;
+}
+
+.chem-sigy {
+    color: #e0a5b9;
+    border-left: 4px solid #e0a5b9;
+}
+
+.chem-diphen {
+    color: #64ffe6;
+    border-left: 4px solid #64ffe6;
+}
+
+.chem-ipecac{
+     color: #422912;
+    border-left: 4px solid #422912;
+}
+
+.chem-stello {
+    color: #FFC683;
+    border-left: 4px solid #FFC683;
+}
+
+.chem-oculine {
+    color: #404040;
+    border-left: 4px solid #404040;
+}
+
+.chem-mannitol {
+    color: #A0A0A0;
+    border-left: 4px solid #A0A0A0;
+}
+
+.chem-epi {
+    color: #a2cfca;
+    border-left: 4px solid #a2cfca;
+}
+
+.chem-cogni {
+    color: #b50ee8;
+    border-left: 4px solid #b50ee8;
+}
+
+.chem-cryox {
+    color: #0091ff;
+    border-left: 4px solid #0091ff;
+}
+
+.chem-necrosol {
+    color: #86a5bd;
+    border-left: 4px solid #86a5bd;
+}
+
+.chem-alox {
+    color: #89f77f;
+    border-left: 4px solid #89f77f;
+}
+
+.chem-doxa {
+    color: #32cd32;
+    border-left: 4px solid #32cd32;
+}
+
+.chem-robust {
+    color: #3e901c;
+    border-left: 4px solid #3e901c;
+}
+
+.chem-mutagen {
+    color: #00ff5f;
+    border-left: 4px solid #00ff5f;
+}
+
+.chem-eznut {
+    color: #664330;
+    border-left: 4px solid #664330;
+}
+
+.chem-l4z {
+    color: #5b406c;
+    border-left: 4px solid #5b406c;
+}
+
+.chem-ammo {
+    color: #77b58e;
+    border-left: 4px solid #77b58e;
+}
+
+.chem-diet {
+    color: #a1000b;
+    border-left: 4px solid #a1000b;
+}
+
+.basic-topical,
+.advanced-topical,
+.defense-chem {
+    margin-bottom: 1em;
+}
+
+.chem-bruise,
+.chem-ointment,
+.chem-gauze {
+    color: #0088bb;
+    border-left: 4px solid #0088bb;
+}
+
+.chem-aloe {
+    color: #00bb88;
+    border-left: 4px solid #00bb88;
+}
+
+.chem-suture,
+.chem-mesh {
+    color: #bb2222;
+    border-left: 4px solid #bb2222;
+}
+
+.chem-sulfuric {
+    color: #BF8C00;
+    border-left: 4px solid #BF8C00;
+}
+
+.chem-fluorosurf {
+    color: #9e6b38;
+    border-left: 4px solid #9e6b38;
+}
+
+.chem-amatoxin {
+    color: #D6CE7B;
+    border-left: 4px solid #D6CE7B;
+}
+
+.chem-razorium {
+    color: #b3cfcb;
+    border-left: 4px solid #b3cfcb;
+}
+
+.chem-desox {
+    color: #FAFAFA;
+    border-left: 4px solid #FAFAFA;
+}
+
+.chem-corgi {
+    color: #ed9715;
+    border-left: 4px solid #ed9715;
+}
+
+.chem-clf3 {
+    color: #EFB8B8;
+    border-left: 4px solid #EFB8B8;
+}
+
+.chem-lube {
+    color: #77b58e;
+    border-left: 4px solid #77b58e;
+}
+
+.chem-mutagen {
+    color: #00ff5f;
+    border-left: 4px solid #00ff5f;
+}
+
+.chem-space {
+    color: #63806e;
+    border-left: 4px solid #63806e;
+}
+
+.chem-soap {
+    color: #c8dfc9;
+    border-left: 4px solid #c8dfc9;
+
+}
+
+.chem-glue {
+    color: #ffffff;
+    border-left: 4px solid #ffffff;
+}
+
+.chem-lube {
+    color: #77b58e;
+    border-left: 4px solid #77b58e;
+}
+
+.chem-cleaner {
+    color: #c8ff69;
+    border-left: 4px solid #c8ff69;
+}
+
+.chem-fluorosulfuric {
+    color: #5050ff;
+    border-left: 4px solid #5050ff;
+}
+
+.chem-foaming {
+    color: #215263;
+    border-left: 4px solid #215263;
+}
+
+input[type=text] {
+    text-transform: uppercase;
+    width: 35px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    border: 2px solid #3d4059;
+}
+
+input[type=submit] {
+    width: 45px;
+    height: 26px;
+    background-color: rgb(70, 73, 102);
+    color: white;
+    margin-top: 10px;
+    align-self: center;
+    font-size: 17px;
+    border: 1px solid rgb(70, 73, 102);
+    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);
+}
+
+input[type=submit]:hover {
+    border: 1px solid rgb(96, 101, 139);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+}
+
+form p {
+    margin: initial;
+    margin-top: -3px;
+}
