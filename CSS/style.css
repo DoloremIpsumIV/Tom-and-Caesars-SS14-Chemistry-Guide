@@ -153,6 +153,49 @@ nav {
     padding-bottom: 10px;
 }
 
+input[type=text] {
+    text-transform: uppercase;
+    width: 35px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    border: 2px solid #3d4059;
+}
+
+input[type=submit] {
+    width: 45px;
+    height: 26px;
+    background-color: rgb(70, 73, 102);
+    color: white;
+    margin-top: 10px;
+    align-self: center;
+    font-size: 17px;
+    border: 1px solid rgb(70, 73, 102);
+    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);
+}
+
+input[type=submit]:hover {
+    border: 1px solid rgb(96, 101, 139);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+}
+
+form p {
+    margin: initial;
+    margin-top: -3px;
+}
+
 .chem-dexplus {
     color: #4da0bd;
     border-left: 4px solid #4da0bd;
@@ -452,46 +495,66 @@ nav {
     color: #215263;
     border-left: 4px solid #215263;
 }
-
-input[type=text] {
-    text-transform: uppercase;
-    width: 35px;
-    height: 24px;
-    text-align: center;
-    color: white;
-    background-color: #121212;
-    border: 2px solid #3d4059;
+.chem-pax {
+    color: #AAAAAA;
+    border-left: 4px solid #AAAAAA;
 }
 
-input[type=submit] {
-    width: 45px;
-    height: 26px;
-    background-color: rgb(70, 73, 102);
-    color: white;
-    margin-top: 10px;
-    align-self: center;
-    font-size: 17px;
-    border: 1px solid rgb(70, 73, 102);
-    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .line{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .highlight{
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    input[type=text] {
+        width: 50px;       
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    input[type=submit] {
+        width: 60px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .chem-header {
+        font-size: 1em;
+        padding: 8px;
+    }
 }
 
-input[type=submit]:hover {
-    border: 1px solid rgb(96, 101, 139);
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
 
-}
+    h1 {
+        font-size: 1.5em;
+    }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.input-row {
-    display: flex;
-    align-items: center;
-}
-
-form p {
-    margin: initial;
-    margin-top: -3px;
 }

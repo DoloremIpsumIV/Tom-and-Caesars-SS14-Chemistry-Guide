@@ -314,3 +314,62 @@ nav {
     color: #292A2B;
     border-left: 4px solid #292A2B;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .line{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .highlight{
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    input[type=text] {
+        width: 50px;       
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    input[type=submit] {
+        width: 60px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .chem-header {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+}
