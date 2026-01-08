@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Caesar's SS14 Chemistry Calculator</title>
+  <link rel="stylesheet" href="./CSS/reagentRecipes.css" />
+  <link rel="icon" type="image/png" href="./images/Caesar-Firefly-South.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volume one</a></li>
+        <li><a href="Volume two.html">Volume two</a></li>
+        <li><a href="Volume three.html">Volume three</a></li>
+        <li><a href="Extra.html">Extra</a></li>
+        <li><a href="ChemCalculator.html">Ceasar's Chemistry Calculator</a></li>
+        <li><a href="https://wiki.spacestation14.com/wiki/Reagents" target="_blank">SS14 Chemistry Wiki Page</a>
+        </li>
+      </ul>
+    </nav>
+    <h1><mark>Caesar's</mark> Chemistry Calculator for <a href="https://spacestation14.com" target="_blank">SS14</a>
+      Reagents & Recipes</h1>
+
+    <div class="muted">
+      <p id="info">
+        <mark>
+          I made this project, which has nothing to do with Tom's original work, mainly to automate my process and keep
+          all recipes relevant, dynamic, and up to date. It's not fully finished, but I've tested it extensively and it
+          seems to be working well! This fetches raw data from the <a
+            href="https://github.com/space-wizards/space-station-14" target="_blank">SS14 GitHub repository</a>. Most
+          reagents and chemicals should be present with their corresponding recipes and steps.<br><br>
+
+          Due to the automated parsing process, not everything might be perfectly accurate or 100% human-readable (like
+          status effects), and depending on your server/branch, it might not fully apply either (though it should work
+          for 99% of cases). This is because the raw data consists of incorrectly formatted YAML files in the SS14
+          source code... This formatting is not only incorrect but varies across different servers/branches (incorrect
+          indentation, custom non-standard YAML tags, empty brackets without data, etc.), so I'm opting to only
+          implement the "main" Wizden version here for now (subject to change).<br><br>
+
+          Hope you enjoy it anyway! :p
+        </mark>
+      </p>
+      <div class="fetchbar">
+        <button id="fetchDataBtn" class="btn" type="button">Fetch latest data</button>
+        <span id="fetchStatus" class="status-pill">Not loaded</span>
+        <span id="fetchStatusDetail" class="muted"></span>
+      </div>
+    </div>
+  </header>
+  <div class="app">
+    <aside>
+      <div class="controls">
+        <div class="row">
+          <input id="search" type="search" placeholder="Search name, type, etc:" />
+          <select id="groupFilter" title="Filter">
+            <option value="__ALL__">All</option>
+          </select>
+
+        </div>
+        <div class="row" style="grid-template-columns: 1fr;">
+          <div id="caps" style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="btn cap-btn item" data-cap="100">Cap 100u</button>
+            <button class="btn cap-btn" data-cap="200">Cap 200u</button>
+            <button class="btn cap-btn" data-cap="250">Cap 250u</button>
+            <button class="btn cap-btn" data-cap="1000">Cap 1000u</button>
+          </div>
+          <div class="muted">Default batch cap is 100u, higher amounts are for jug, bucket or
+            bluespacebeaker mixing</div>
+        </div>
+        <div class="muted" id="countLine"></div>
+      </div>
+      <div id="list" class="list"></div>
+    </aside>
+    <main>
+      <div id="view"></div>
+    </main>
+  </div>
+  <script type="module" src="./SCRIPT/remoteLoader.js"></script>
+  <script type="module" src="./SCRIPT/calculator.js"></script>
+</body>
+
+</html>

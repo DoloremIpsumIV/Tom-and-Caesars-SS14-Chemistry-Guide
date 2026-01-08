@@ -1,3 +1,4 @@
+// This is just for the sound playing along with the text rolling and unblurring, which I thought was kinda neat, like it's decrypting for you or some shit idunno
 const introSound = new Audio("./Soundfiles/traitor_start.ogg");
 introSound.play();
 
@@ -31,7 +32,6 @@ document.head.appendChild(style);
 // Characters used for scrambling
 const chars = ".- ";
 
-// Utility: scramble text with random chars of same length
 function scrambleText(length) {
     let result = '';
     for (let i = 0; i < length; i++) {
@@ -40,9 +40,8 @@ function scrambleText(length) {
     return result;
 }
 
-// Scramble effect: replaces text gradually with original text
 function scrambleReveal(element, originalText, duration = 2000) {
-    const intervalTime = 30; // ms between updates
+    const intervalTime = 30;
     const totalFrames = Math.floor(duration / intervalTime);
     let frame = 0;
 
@@ -50,18 +49,18 @@ function scrambleReveal(element, originalText, duration = 2000) {
         let output = '';
         for (let i = 0; i < originalText.length; i++) {
             if (i < (frame / totalFrames) * originalText.length) {
-                output += originalText[i]; // reveal correct char
+                output += originalText[i];
             } else if (originalText[i] === ' ') {
-                output += ' '; // preserve spaces
+                output += ' ';
             } else {
-                output += chars.charAt(Math.floor(Math.random() * chars.length)); // scramble
+                output += chars.charAt(Math.floor(Math.random() * chars.length));
             }
         }
         element.textContent = output;
         frame++;
         if (frame > totalFrames) {
             clearInterval(revealInterval);
-            element.textContent = originalText; // final fix
+            element.textContent = originalText;
         }
     }, intervalTime);
 }
@@ -93,7 +92,7 @@ function wrapTextNodes() {
 }
 
 // Observe and reveal elements progressively with scramble
-function observeHackEffects() {    
+function observeHackEffects() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -120,6 +119,6 @@ function observeHackEffects() {
     all.forEach(el => observer.observe(el));
 }
 
-// Run everything
+// Initializes it all
 wrapTextNodes();
 observeHackEffects();
