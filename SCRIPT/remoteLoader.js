@@ -1,9 +1,3 @@
-/*So this is just the fetch that then gets merged into an empty JSON file which then the calculator grabs and formats data from. 
-Will probably change this at some point so you can either choose other forks and branches and stuff like goob, funky, yada yada. 
-I tried implementing this at first (hence random functions and variables that do nothing) but due to the different formatting of YML files in different branches it got messy fast so i opted for a GAURANTEED working version first.
-Best would be if you could just enter your own branch and then it'd just WORK PERFECTLY AND AUTOMATICALLY but due to the different (incorrect mind you) YML formatting I will prob need to manually add all of them...
-*/
-
 // Uses GitHub Contents API + js-yaml to fetch YAML, merge, then hand result to calculator.js, as always this is running on vibes, thoughts, prayers, and copius amounts of redbull :p
 import jsyaml from "https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.mjs";
 
