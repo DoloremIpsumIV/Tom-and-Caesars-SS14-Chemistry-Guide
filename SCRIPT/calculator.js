@@ -1,9 +1,3 @@
-/*Right so this pile of shit is complete fucking vibecode and shit (which is no difference to most SS14 code), 
-but if you wanna reuse/recode/reformat/learn/whatever with this then feel free to do so because I frankly don't care. 
-This is open source yada yada enjoy, no need to credit or do anything, just take whatever (I do the same with plenty so i'm no hypocrite).
-Also don't ask me how this fully works because frankly I barely know myself, enjoy! :p
-*/
-
 // DOM helper
 const $ = (sel) => document.querySelector(sel);
 
